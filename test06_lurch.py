@@ -78,6 +78,7 @@ class TestGame:
             time_passed = clock.tick(30)
             self.screen.fill((55, 55, 55), self.background_rect)
 
+            self.box_position_x += 10
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     self.game_is_running = False
